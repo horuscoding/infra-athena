@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.1.0](https://github.com/horuscoding/infra-athena/compare/v1.0.0...v1.1.0) (2021-11-26)
+
+
+### Features
+
+* initialize table in Athena via query ([a96c977](https://github.com/horuscoding/infra-athena/commit/a96c97710764e5223a3874822307371f71bf6696))
+
 # 1.0.0 (2021-11-26)
 
 
