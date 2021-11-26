@@ -1,0 +1,14 @@
+repos:
+-   repo: https://github.com/bridgecrewio/checkov.git
+    rev: 2.0.605 # Get the latest from: https://github.com/bridgecrewio/checkov/releases
+    hooks:
+    -   id: checkov
+        files: \.tf$
+-   repo: git://github.com/antonbabenko/pre-commit-terraform
+    rev: v1.58.0 # Get the latest from: https://github.com/antonbabenko/pre-commit-terraform/releases
+    hooks:
+    -   id: terraform_fmt
+    -   id: terraform_docs
+    -   id: terraform_validate
+        args:
+           - '--envs=AWS_DEFAULT_REGION="us-east-1"'
